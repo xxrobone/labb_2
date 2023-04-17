@@ -12,12 +12,21 @@ const ComponentHeader = styled.header`
     justify-content: space-between;
 `
 
-const Header = ({children}: {children: ReactNode}): ReactElement | null => {
+const defaultHeaderProps = {
+    title: <strong>Logo / text</strong>
+}
+
+type HeaderProps = {children: ReactNode} & typeof defaultHeaderProps
+
+const Header = ({title, children}: HeaderProps): ReactElement => {
   return (
-        <ComponentHeader>
+      <ComponentHeader>
+          <h1>{title}</h1>
             {children}
         </ComponentHeader>
   )
 }
+
+Header.defaultProps = defaultHeaderProps
 
 export default Header
