@@ -1,3 +1,4 @@
+'use client'
 import { DetailedHTMLProps, ButtonHTMLAttributes } from 'react'
 import styled, { StyledComponent } from '@emotion/styled'
 import { Theme } from '@emotion/react';
