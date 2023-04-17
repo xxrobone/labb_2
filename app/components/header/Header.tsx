@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactElement, ReactNode } from 'react'
 import styled from '@emotion/styled'
 
 const ComponentHeader = styled.header`
@@ -12,9 +12,7 @@ const ComponentHeader = styled.header`
     justify-content: space-between;
 `
 
-type Props = {}
-
-const Header = (props: Props, {children}: {children: ReactNode}) => {
+const Header = ({children}: {children: ReactNode}): ReactElement | null => {
   return (
         <ComponentHeader>
             {children}
