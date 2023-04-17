@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header><strong>LOGO would go here</strong> <nav>nav here!</nav></Header>
+        <Header><nav>nav here!</nav></Header>
         {children}</body>
     </html>
   )
