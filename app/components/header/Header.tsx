@@ -1,3 +1,4 @@
+'use client'
 import React, { ReactNode } from 'react'
 import styled from '@emotion/styled'
 
@@ -12,9 +13,11 @@ const ComponentHeader = styled.header`
     justify-content: space-between;
 `
 
-type Props = {}
+interface Header {
+    children: ReactNode
+}
 
-const Header = (props: Props, {children}: {children: ReactNode}) => {
+const Header = ({children}: {children: ReactNode}) => {
   return (
         <ComponentHeader>
             {children}
