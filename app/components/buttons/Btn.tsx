@@ -1,3 +1,4 @@
+'use client'
 import { DetailedHTMLProps, ButtonHTMLAttributes } from 'react'
 import styled from '@emotion/styled'
 
