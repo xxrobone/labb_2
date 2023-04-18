@@ -27,6 +27,7 @@ const Button: StyledComponent<{
 
 type Props = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & {}
 
+
 const Btn = (props: Props) => {
   return (
       <Button {...props} />
