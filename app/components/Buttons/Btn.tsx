@@ -17,6 +17,7 @@ const Button: StyledComponent<{
   &:hover {
     background-color: white;
     color: #14ecac;
+    cursor: pointer;
   }
 
   &:active {
