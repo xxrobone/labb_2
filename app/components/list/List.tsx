@@ -4,7 +4,6 @@ import React, { ReactNode } from 'react'
 import './List.css'
 type Props = {}
 
-const color = "magenta"
 
 // creating a list using generic funtions
 
